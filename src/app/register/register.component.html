@@ -1,0 +1,217 @@
+
+<!-- Section: Design Block -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
+  <div class="container-xl">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://preview.webpixels.io/web/img/logos/clever-light.svg" class="h-8" alt="...">
+    </a>
+    <!-- Navbar toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!-- Nav -->
+      <div class="navbar-nav mx-lg-auto">
+        <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
+        <a class="nav-item nav-link" href="http://localhost:4200/about">About</a>
+        <!-- <a class="nav-item nav-link" href="#">Categories</a> -->
+        <a class="nav-item nav-link" href="http://localhost:4200/contact">Contact Us</a>
+      </div>
+      <!-- Right navigation -->
+      
+      <!-- Action -->
+      <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+        <!-- <a routerLink=""class="btn btn-sm btn-primary w-full w-lg-auto">
+          Logout
+        </a> -->
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+      .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+          radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+      
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+      }
+  
+      .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+      #j{
+        margin-left: 200px;
+       
+      }
+      @media only screen and (max-width: 600px) {
+    #j{
+        margin-left: 3px;
+    }
+}
+    </style>
+    
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+
+
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            The best offer <br />
+            <span style="color: hsl(218, 81%, 75%)">for the books</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Because of the self-confidence with which he had spoken, no one could tell whether what he said was very clever or very stupid.
+            -Leo Tolstoy
+          </p>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1"> Name</label>
+                      <input type="text" id="form3Example1" name="uname" [(ngModel)]="uname"placeholder="enter the name" class="form-control" />
+                     
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example2">Account Number</label>
+                      <input type="text" id="form3Example2"  [(ngModel)]="acno" name="acno"placeholder="enter the account number"class="form-control" />
+                    
+                    </div>
+                  </div>
+                </div>
+  
+               
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4">Password</label>
+                  <input type="password" id="form3Example4" name="psw" [(ngModel)]="psw"placeholder="enter the account number" class="form-control" />
+                 
+                </div>
+  
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+  
+                <!-- Submit button -->
+                <button id="j" type="submit" (click)="register()" class="btn btn-primary btn-block mb-4">
+                  Sign up
+                </button>
+                
+  
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>contact us on</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+  
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </section>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        
+  
+        <!-- Github -->
+       
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <p class="text-white" > Clever Books Technologies Private Limited. | All Rights Reserved with Copyright & TradeMarks</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Section: Design Block -->

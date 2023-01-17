@@ -1,0 +1,38 @@
+#j2{
+  font-size:40px ;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+#j3{
+  height: 500px;
+  
+}
+.card{
+  width: 400px;
+  background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border: #eec0c6 ;
+
+
+}
+#j{
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  
+}
+#j7{
+  font-size:40px ;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(61, 7, 100);
+  text-shadow: black;
+}
+a{
+  text-decoration: none;
+  
+}
+a:hover{
+  color: white;
+}
